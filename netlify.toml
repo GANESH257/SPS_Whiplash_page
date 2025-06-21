@@ -1,9 +1,21 @@
 [build]
   publish = "."
+  # No build command needed for static HTML
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  status = 200
+
+# Form handling
+[[redirects]]
+  from = "/contact"
+  to = "/thank-you.html"
+  status = 200
+
+[[redirects]]
+  from = "/success"
+  to = "/thank-you.html"
   status = 200
 
 [build.environment]
